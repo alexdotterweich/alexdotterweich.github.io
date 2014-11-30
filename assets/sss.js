@@ -6,12 +6,7 @@ var msnry = new Masonry( container, {
   columnWidth: container.querySelector('.grid-sizer')
 });
 
-.grid-sizer { width: 20%; }
 
-@media screen and (min-width: 720px) {
-  /* 10 columns for larger screens */
-  .grid-sizer { width: 10%; }
-}
 <script>  
   $(window).ready(function() {
   jQuery("#content").load("top.html", function(){
@@ -25,3 +20,24 @@ var msnry = new Masonry( container, {
   });
 });
 </script>
+
+// wanted to make the green border appear when an item was clicked,
+// but my css wasn't working so I added it as a css thing when the
+// user hovers
+
+$('.item')
+  .click(
+    function(){
+     $(this).css('.item', 'outline: 2px solid green;');
+    }
+  )
+  .hover(
+    function(){
+      $(this).css('.item', 'opacity: 0.8');
+    }
+  );
+
+
+$("#top_bar").click(function(){
+  $("#h1").show();
+});

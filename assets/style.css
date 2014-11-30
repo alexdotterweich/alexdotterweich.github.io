@@ -13,8 +13,8 @@ div {
 }
 #main_page {
    position: absolute;
-    top:15%;
-    width:100%;
+   top:15%;
+   width:100%;
 }
 
 
@@ -38,16 +38,6 @@ form{
    vertical-align: middle;
    width: 30%;
 }
-.item .w2 {
-   width:  120px; 
-}
-.item.w3 { width:  180px; }
-.item.w4 { width:  240px; }
-
-.item.h2 { height: 100px; }
-.item.h3 { height: 130px; }
-.item.h4 { height: 180px; }
-
 .item.w2 { width:  120px; }
 .item.w3 { width:  180px; }
 .item.w4 { width:  240px; }
@@ -55,50 +45,48 @@ form{
 .item.h2 { height: 100px; }
 .item.h3 { height: 130px; }
 .item.h4 { height: 180px; }
-/*
+
 .masonry {
-
-  max-width: 740px;
-}
-
-.masonry .item {
-position:relative;
-  width:  60px;
-  height: 60px;
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 5px;
-}*/
-.masonry {
-
   max-width: 98%;
   margin-left: 10px;
 
 }
+h2 { 
+   position: absolute;
+   color: white;
+   top: -10px; 
+   left: 0; 
+   width: 80%; 
+   margin-left: 10px;
+}
+h3 { 
+   position: absolute;
+   color: white;
+   font-size: 16;
+   top: 25px; 
+   left: 0; 
+   width: 80%; 
+   margin-left: 10px;
+}
 
 .masonry .item {
-
   float: left;
-
-
 }
-
-
+.item:hover {
+   opacity: 0.8;
+   outline: 2px solid green;
+}
 
 #top_stuff {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   width: 100%;
 }
 #top_bar {
-   
-    width: 100%;
-    top: -16;
-    z-index: 999;
-
+   width: 100%;
+   top: -16;
+   z-index: 999;
    position: fixed;
    list-style: none;
    width: 100%;
@@ -118,27 +106,21 @@ position:relative;
 #top_bar li a:hover {
    background-color: #E0E0E0;
    color: grey; 
-
    font-weight: 600;
 
 }
 
 #content {
    margin: 0 auto;
-
 }
-
 
 .text-box {
    margin-left: 7px;
-   font-family: helvetica;
-  
+   font-family: helvetica; 
 }
 
 body {
-   
-    min-width:900px;
-    
+   min-width:900px;
 }
 
 h4 {
@@ -158,19 +140,9 @@ h1 {
    margin-left: 15px;
 }
 
-/*.item {
-width: 415px;
-    height: 321px;
+.special {
+   font-weight: 700;
+   margin-top: 15px;
 
 }
-.item2 {
-   width: 415px;
-    height: 321px;
-}*/
 
-/*.grid-sizer { width: 20%; }
-
-@media screen and (min-width: 720px) {
-  /* 10 columns for larger screens */
-  .grid-sizer { width: 10%; }
-}*/
